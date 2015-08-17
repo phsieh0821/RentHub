@@ -1,0 +1,33 @@
+Users: 
+{
+	email,
+	password, 
+	location, 
+	dCreated,
+	itemlistId [] . 
+}
+
+Items - Its own document type to prevent update of subdocuments on parent. 
+{
+	name (string) ,
+	description (string) , 
+	imageLinks (array)[], 
+	price (float) ,
+	users_id (reference)
+}
+
+jay, wtf, .jpg, 15, jay
+
+db.itemcollection.insert("name:blah , owner_id")
+
+es -> 
+
+parent
+
+child
+
+parent: UserCollecition 
+
+Mongo->
+_parentReference . 
+ 
